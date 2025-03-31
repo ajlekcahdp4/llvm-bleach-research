@@ -1,48 +1,46 @@
 ---
 
-title: Agile approach to lifting LLVM MIR code into LLVM IR
+title: Гибкий подход к подъёму LLVM MIR кода в SSA форму LLVM IR
 sub_title: (https://github.com/ajlekcahdp4/llvm-bleach)
 authors:
 
-- Romanov Alexander
+- Романов Александр
 
 ---
 
-Binary translators
+Бинарные трансляторы
 ===
 
 <!-- column_layout: [1, 1] -->
 
 <!-- column: 0 -->
 
-# Generic
-+ Specialized low-level representation
-+ Difficult to support new architectures
-+ Register mapping
-+ Instruction mapping
+# Обычные
++ Специализированное низкоуровневое представление
++ Сложная поддержка новых целевых архитектур
++ Cопостовление регистров
++ Cопоставление инструкций
 
 <!-- column: 1 -->
 # LLVM-based
-+ Lifting to LLVM IR
-+ Practically unlimited target architecture set
-+ Well-developed compiler and tooling infrastructure
++ Подъём в LLVM IR
++ Развитая инфраструктура анализа и инструментации
 <!-- end_slide -->
 
-LLVM-based lifters
+Трансляторы в LLVM
 ===
 
-# Existing solutions
-+ mcsema (2014)
-+ mctoll (2019)
-+ instrew (2020)
-+ biotite (2025)
+# Существующие решение
++ mcsema
++ mctoll
++ instrew
 
-# Flaws
-+ Target-specific lifting algorithm
-+ Difficult to support new source architectures
+# Недостатки
++ Алгоритм трансляции специфичен для архитектуры
++ Сложная поддержка новых исходных архитектур
 <!-- end_slide -->
 
-LLVM compiler
+Компилятор LLVM
 ===
 
 ```mermaid +render
@@ -91,7 +89,7 @@ flowchart TD
 
 <!-- end_slide -->
 
-solution - llvm-bleach
+llvm-bleach
 ===
 ```mermaid +render
 flowchart TD
@@ -113,39 +111,39 @@ flowchart TD
 llvm-bleach
 ===
 
-# Innovations
-+ Source target description - configuration file
-+ Do NOT attempt to lift target signature
-+ Generic (target-independent) translation algorithm
-+ Does not use LLVM backend during lifting
+# Нововведения
++ Описание исходной архитектуры - конфигурация
++ Не пытаемся восстановить сигнатуру функций
++ Обобщённые алгоритмы трансляции
++ Не используется LLVM backend
 
 <!-- end_slide -->
 
 llvm-bleach
 ===
 
-# Advantages
-+ Easy to support new source architectures
-+ Configurable lifting process
-+ Simplified build system
+# Преимущества
++ Легко поддержкать новую исходную архитектуру
++ Настраиваемый процесс подъёма
++ Упрощённая сборка проекта
 
 <!-- end_slide -->
 
-Generic Approach
+Общие принципы
 ===
 
-# Each MIR instruction is mapped to LLVM function
-+ Source operand -> argument
-+ Destination operand -> return value
+# Каждой инструкции сопоставляется функция
++ Входной операнд -> аргумент
++ Результат -> возвращаемое значение
 <!-- column_layout: [1, 1] -->
 
 <!-- column: 0 -->
-## MIR Instruction
+## Инструкция
 ```bash
 $x1 = ADD $x2, $x3
 ```
 <!-- column: 1 -->
-## LLVM Function
+## Функция
 ```c
 define i64 @ADD(i64 %0, i64 %1) {
     %3 = add i64 %1, %0
@@ -154,13 +152,13 @@ define i64 @ADD(i64 %0, i64 %1) {
 ```
 <!-- end_slide -->
 
-Code translation
+Преобразование кода
 ===
 
 <!-- column_layout: [1, 1] -->
 
 <!-- column: 0 -->
-# MIR Block (RISC-V)
+# Блок MIR (RISC-V)
 ```bash
 bb.1:
   $x19 = MUL $x7, $x2
@@ -169,7 +167,7 @@ bb.1:
   BNE $x13, $x3, %bb.1
 ```
 <!-- column: 1 -->
-# Output LLVM IR
+# Получившийся LLVM IR
 ```c
 bb1:
 %19 = call i64 @MUL(i64 %x7, i64 %x2)
@@ -179,7 +177,7 @@ bb1:
 br i1 %cmp, label %bb1, label %bb2
 ```
 <!-- reset_layout -->
-# Output LLVM IR after inlining
+# LLVM IR после подстановки
 ```c
 bb1:
   %19 = mul i64 %x7, %x2
@@ -191,11 +189,11 @@ bb1:
 
 <!-- end_slide -->
 
-Function Calls
+Преобразование функций
 ===
 
-# Custom calling convention
-State struct - the only argument
+# Своё соглашение о вызовах
+Cтруктура состояния - единственный аргумент
 ```ruby +line_numbers
 define void @foo(ptr %0) {
   %GPR = getelementptr %register_state, ptr %0, i32 0, i32 0
@@ -212,7 +210,7 @@ define void @foo(ptr %0) {
 
 <!-- end_slide -->
 
-Algorithm
+Алгоритм
 ===
 
 ```python {1-14|13|9-11|5-8} +line_numbers
@@ -233,18 +231,18 @@ def lift(F: function):
 ```
 <!-- end_slide -->
 
-Peering forward
+Что дальше
 ===
-+ Target configuration generation from formal specification (sail-riscv for RISC-V)
-+ Syscall translation
-+ Support both Dynamic and Static binary translation
-+ Testing of clang compiler
-+ Using llvm-bleach in binary instrumentation
++ Генерация конфигурации из формальной спецификации
++ Трансляция системных вызовов
++ Динамическая и статическая бинарная трансляция
++ Тестирование компилятора clang
++ Использование в бинарной инструментации
 
 
 <!-- end_slide -->
 
 <!-- jump_to_middle -->
 
-Thank you for your attention!
+Спасибо за внимание!
 ---
