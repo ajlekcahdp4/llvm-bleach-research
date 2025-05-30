@@ -39,6 +39,8 @@
           imports = [ ./nix/treefmt.nix ];
           devShells.default = pkgs.mkShell {
             nativeBuildInputs = with pkgs; [
+              typst
+              typstfmt
               mermaid-cli
               presenterm
               self'.packages.presenterm-export
