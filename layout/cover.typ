@@ -19,7 +19,6 @@
     ),
   )
 
-  // TODO: replace with your info
   v(5mm)
   align(
     center, text(

@@ -56,7 +56,7 @@
     strong(it)
   }
   outline(title: {
-    text(font: fonts.body, 1.5em, weight: 700, "Contents")
+    text(font: fonts.body, 1.5em, weight: 700, "Содержание")
     v(15mm)
   }, indent: 2em)
 

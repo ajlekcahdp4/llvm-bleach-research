@@ -1,6 +1,6 @@
 #import "/utils/todo.typ": TODO
 
-= Related Work
+= Обзор существующих решений
 #TODO[
   Describe related work regarding your topic and emphasize your (scientific)
   contribution in contrast to existing approaches / concepts / workflows. Related
