@@ -12,7 +12,9 @@
 )
 
 #include "/content/introduction.typ"
+#pagebreak()
 #include "/content/tasks.typ"
+#pagebreak()
 #include "/content/related_work.typ"
 #include "/content/requirements.typ"
 #include "/content/system_design.typ"

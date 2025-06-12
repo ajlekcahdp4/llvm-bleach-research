@@ -18,7 +18,7 @@
   print_page_break(print: is_print)
 
   set page(
-    margin: (left: 30mm, right: 15mm, top: 20mm, bottom: 20mm), numbering: "1", number-align: center, header: grid(columns: (1fr), align: (center), title, v(1mm), grid.hline()),
+    margin: (left: 30mm, right: 15mm, top: 30mm, bottom: 20mm), numbering: "1", number-align: center, header: grid(columns: (1fr), align: (center), v(5mm), title, v(2mm), grid.hline()),
   )
 
   set text(font: fonts.body, size: 12pt, lang: "en")

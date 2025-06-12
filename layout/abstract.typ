@@ -2,7 +2,7 @@
 
 #let abstract(title: "", author: "") = {
   set page(
-    margin: (left: 30mm, right: 15mm, top: 20mm, bottom: 20mm), numbering: none, number-align: center, header: grid(columns: (1fr), align: (center), title, v(1mm), grid.hline()),
+    margin: (left: 30mm, right: 15mm, top: 20mm, bottom: 20mm), numbering: none, number-align: center, header: grid(columns: (1fr), align: (center), v(0.5mm), text(title, size: 12pt), v(1.6mm), grid.hline()),
   )
 
   set text(font: fonts.body, size: 10pt, lang: "ru")
