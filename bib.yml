@@ -2,3 +2,60 @@ rsa:
   type: Article
   author: Marcus Aurelius
   title: Meditations
+ssa-original:
+  type: article
+  title: |
+    "Code motion of control structures in high-level languages" in Proceedings of the 13th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages
+  author: ["Cytron, Ron", "Lowry, Andy", "Zadeck, F. Kenneth"]
+  date: 1986
+  page-range: 70-80
+  serial-number:
+    doi: 10.1145/512644.512651
+  parents:
+    type: proceedings
+    title: Proceedings of the 13th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages
+    publisher:
+      name: Association for Computing Machinery
+      location: New York, NY, USA
+ssa-phi-funcs:
+  type: article
+  title: |
+    "Global value numbers and redundant computations" in Proceedings of the 15th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages
+  author: ["Rosen, B. K.", "Wegman, M. N.","Zadeck, F. K."]
+  date: 1988
+  serial-number:
+    doi: 10.1145/73560.73562
+  page-range: 12-27
+  parents:
+    type: proceedings
+    title: Proceedings of the 15th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages
+    publisher:
+      name: Association for Computing Machinery
+      location: New York, NY, USA
+
+llvm:
+  type: article
+  title: |
+    "LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation" in Proceedings of the International Symposium on Code Generation and Optimization: Feedback-Directed and Runtime Optimization
+  author: ["Lattner, Chris", "Adve, Vikram"]
+  date: 2004
+  serial-number:
+    doi: 10.5555/977395.977673
+  parents:
+    type: proceedings
+    title: |
+      Proceedings of the International Symposium on Code Generation and Optimization: Feedback-Directed and Runtime Optimization
+    publisher:
+      name: IEEE Computer Society
+      location: Palo Alto, California, USA
+
+snippy:
+  type: article
+  title: Эффективное построение переупорядочиваний множества операций с памятью в многопоточной программе
+  author: ["Владимиров, Константин", "Андреев, Илья"]
+  serial-number:
+    doi: 10.25559/SITITO.020.202401.149-156
+  date: 2024
+  publisher:
+    name: Международный научный журнал "Современные информационные технологии и ИТ-образование" 
+  volume: 20
