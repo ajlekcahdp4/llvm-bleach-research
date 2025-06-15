@@ -93,5 +93,6 @@
   include("/layout/appendix.typ")
 
   pagebreak()
-  bibliography("/bib.yml", full: true, style: "ieee")
+  set cite(style: "alphanumeric")
+  bibliography("/bib.yml", full: true, title: "Список Литературы", style: "ieee")
 }

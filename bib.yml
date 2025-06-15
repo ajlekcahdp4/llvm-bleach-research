@@ -1,7 +1,3 @@
-rsa:
-  type: Article
-  author: Marcus Aurelius
-  title: Meditations
 ssa-original:
   type: article
   title: |
@@ -68,4 +64,43 @@ bleach-conference-paper:
   publisher:
     name: |
       "Труды 67-й Всероссийской научной конференции МФТИ, Радиотехника и компьютерные технологии. 2025, С 70-71"
-    
+
+ghidra:
+  type: article
+  author: Rohleder, Roman
+  title: |
+    Hands-On Ghidra - A Tutorial about the Software Reverse Engineering Framework. In Proceedings of the 3rd ACM Workshop on Software Protection
+  serial-number:
+    doi: 10.1145/3338503.3357725
+  date: 2019
+  publisher:
+    name: Association for Computing Machinery
+    location: London, UK
+
+rosetta:
+  type: web
+  title: Rosetta
+  url:
+    value: https://web.archive.org/web/20060113055505/http://www.apple.com/rosetta/
+    url: 2025-06-14
+ia32el:
+  type: article
+  title: |
+    IA-32 Execution Layer: a two-phase dynamic translator designed to support IA-32 applications on Itanium®-based systems. In Proceedings of the 36th Annual IEEE/ACM International Symposium on Microarchitecture
+  author: ["Baraz, Leonid", "Devor, Tevi", "Etzion, Orna", "Goldenberg, Shalom", "Skaletsky, Alex", "Wang, Yun", "Zemach, Yigel"]
+  date: 2003
+  serial-number:
+    isbn: 076952043X
+berberis:
+  type: web
+  title: Berberis
+  url:
+    value: https://android.googlesource.com/platform/frameworks/libs/binary_translation/
+    date: 2025-06-14
+qemu:
+  type: article
+  author: ["Bellard, Fabrice"]
+  title: QEMU, a fast and portable dynamic translator. In Proceedings of the USENIX Annual Technical Conference
+  date: 2005
+  serial-number:
+    doi: 10.5555/1247360.1247401
