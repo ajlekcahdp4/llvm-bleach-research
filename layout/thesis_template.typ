@@ -21,7 +21,7 @@
     margin: (left: 30mm, right: 15mm, top: 30mm, bottom: 20mm), numbering: "1", number-align: center, header: grid(columns: (1fr), align: (center), v(5mm), title, v(2mm), grid.hline()),
   )
 
-  set text(font: fonts.body, size: 12pt, lang: "en")
+  set text(font: fonts.body, size: 12pt, lang: "ru")
 
   show math.equation: set text(weight: 400)
 
