@@ -94,5 +94,5 @@
 
   pagebreak()
   set cite(style: "alphanumeric")
-  bibliography("/bib.yml", full: true, title: "Список Литературы", style: "ieee")
+  bibliography("/bib.yml", full: true, title: "Список Литературы", style: "ieee.csl")
 }

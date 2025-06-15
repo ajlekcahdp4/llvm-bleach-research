@@ -82,7 +82,7 @@ rosetta:
   title: Rosetta
   url:
     value: https://web.archive.org/web/20060113055505/http://www.apple.com/rosetta/
-    url: 2025-06-14
+    date: 2025-06-14
 ia32el:
   type: article
   title: |
@@ -104,3 +104,36 @@ qemu:
   date: 2005
   serial-number:
     doi: 10.5555/1247360.1247401
+
+mctoll:
+  type: article
+  date: 2019
+  author: ["Yadavalli, S. Bharadwaj", "Smith, Aaron"]
+  title: Raising binaries to LLVM IR with MCTOLL (WIP paper). In proceedings of the 20th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems
+  page-range: 213–218
+  serial-number:
+    doi: 10.1145/3316482.3326354
+mcsema:
+  type: web
+  title: Framework for lifting x86, amd64, aarch64, sparc32, and sparc64 program binaries to LLVM bitcode
+  url:
+    value: https://github.com/lifting-bits/mcsema
+    date: 2025-06-15
+
+rellume:
+  type: article
+  author: ["Engelke, Alexis", "Schulz, Martin"]
+  title: |
+    Instrew: Leveraging LLVM for High Performance Dynamic Binary Instrumentation. In proceedings of the 16th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments
+  date: 2020-03
+  serial-number:
+    doi: 10.1145/3381052.3381319
+
+biotite:
+  type: article
+  title: |
+    Biotite: A High-Performance Static Binary Translator using Source-Level Information. In proceedings of the 34th ACM SIGPLAN International Conference on Compiler Construction
+  author: ["Chen, Changbin","Sugita, Shu","Nada, Yotaro","Irie, Hidetsugu","Sakai, Shuichi","Shioya, Ryota"]
+  date: 2025
+
+
