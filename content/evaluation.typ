@@ -1,43 +1,15 @@
 #import "/utils/todo.typ": TODO
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.1": *
+#show: codly-init.with()
 
-= Case Study / Evaluation
-#TODO[
-  If you did an evaluation / case study, describe it here.
-]
+= Описание практической части
+В данной главе представлена имплементация идей и подходов к решению задачи
+подъёма MIR кода архитектуры RISC-V в LLVM IR, описанных в @chapt-solution.
+Построена модель инструкций этой архитектуры и описано применение её для
+трансляции RISC-V кода в высокоуровневое представление LLVM IR.
 
-== Design
-#TODO[
-  Describe the design / methodology of the evaluation and why you did it like
-  that. e.g. what kind of evaluation have you done (e.g. questionnaire, personal
-  interviews, simulation, quantitative analysis of metrics), what kind of
-  participants, what kind of questions, what was the procedure?
-]
-
-== Objectives
-#TODO[
-  Derive concrete objectives / hypotheses for this evaluation from the general
-  ones in the introduction.
-]
-
-== Results
-#TODO[
-  Summarize the most interesting results of your evaluation (without
-  interpretation). Additional results can be put into the appendix.
-]
-
-== Findings
-#TODO[
-  Interpret the results and conclude interesting findings
-]
-
-== Discussion
-#TODO[
-  Discuss the findings in more detail and also review possible disadvantages that
-  you found
-]
-
-== Limitations
-#TODO[
-  Describe limitations and threats to validity of your evaluation, e.g.
-  reliability, generalizability, selection bias, researcher bias
-]
+== Модель инструкции RISC-V
+Начнём с построения модели инструкции архитектуры RISC-V, представленной в @chapt-instr-model.
+== Имплементация транслятора
+== Результаты
