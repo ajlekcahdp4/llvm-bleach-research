@@ -136,4 +136,10 @@ biotite:
   author: ["Chen, Changbin","Sugita, Shu","Nada, Yotaro","Irie, Hidetsugu","Sakai, Shuichi","Shioya, Ryota"]
   date: 2025
 
-
+riscv-isa:
+  type: article
+  author: ["Waterman, Andrew", "Lee, Yunsup", "Avizienis, Rimas","Cook, Henry", "Patterson, David", "Asanovic, Krste"]
+  title: The RISC-V instruction set
+  date: 2013
+  serial-number:
+    doi: 10.1109/HOTCHIPS.2013.7478332

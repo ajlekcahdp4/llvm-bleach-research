@@ -34,7 +34,7 @@
     let el = it.element
     if el != none and el.func() == heading and el.level == 1 {
       link(
-        el.location(), [Chapter #numbering(el.numbering, ..counter(heading).at(el.location()))],
+        el.location(), [Глава #numbering(el.numbering, ..counter(heading).at(el.location()))],
       )
     } else {
       it
