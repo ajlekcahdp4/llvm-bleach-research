@@ -57,13 +57,14 @@ snippy:
   volume: 20
 
 bleach-conference-paper:
-  type: article
+  type: book
   author: ["Романов, Александр", "Владимиров, Константин"]
   title: Гибкий подход к подъёму LLVM MIR кода в SSA форму LLVM IR
   page-range: 70-71
   publisher:
     name: |
-      "Труды 67-й Всероссийской научной конференции МФТИ, Радиотехника и компьютерные технологии. 2025, С 70-71"
+      "Труды 67-й Всероссийской научной конференции МФТИ, Радиотехника и компьютерные технологии."
+  date: 2025
 
 ghidra:
   type: article
@@ -143,3 +144,17 @@ riscv-isa:
   date: 2013
   serial-number:
     doi: 10.1109/HOTCHIPS.2013.7478332
+
+bleach-github:
+  type: web
+  title: llvm-bleach
+  url:
+    value: https://github.com/ajlekcahdp4/llvm-bleach
+    date: 2025-06-17
+yaml-spec:
+  type: web
+  title: YAML Ain’t Markup Language
+  version: 1.2
+  url:
+    value: https://yaml.org/spec/1.2.2/
+    date: 2025-06-17
