@@ -158,3 +158,28 @@ yaml-spec:
   url:
     value: https://yaml.org/spec/1.2.2/
     date: 2025-06-17
+llvm-langref:
+  type: web
+  title: LLVM Language Reference Manual
+  url:
+    value: https://llvm.org/docs/LangRef.html
+    date: 2025-06-18
+llvm-passes:
+  type: web
+  title: LLVM’s Analysis and Transform Passes
+  url:
+    value: https://llvm.org/docs/Passes.html
+    date: 2025-06-18
+llvm-float-bug:
+  type: web
+  title: "MachineLICM incorrectly hoists fsrmi out of loop"
+  date: 2025-04-10
+  url:
+    value: https://github.com/llvm/llvm-project/issues/135172
+    date: 2025-06-18
+spike:
+  type: web
+  title: Spike RISC-V ISA Simulator
+  url:
+    value: https://github.com/riscv-software-src/riscv-isa-sim
+    date: 2025-06-18

@@ -69,14 +69,14 @@
   body
 
   // List of figures.
-  pagebreak()
-  heading(numbering: none)[List of Figures]
-  show outline: it => { // Show only the short caption here
-    in-outline.update(true)
-    it
-    in-outline.update(false)
-  }
-  outline(title: "", target: figure.where(kind: image))
+  //pagebreak()
+  //heading(numbering: none)[List of Figures]
+  //show outline: it => { // Show only the short caption here
+  //  in-outline.update(true)
+  //  it
+  //  in-outline.update(false)
+  //}
+  //outline(title: "", target: figure.where(kind: image))
 
   // List of tables.
   context[
@@ -88,9 +88,9 @@
   ]
 
   // Appendix.
-  pagebreak()
-  heading(numbering: none)[Appendix A: Supplementary Material]
-  include("/layout/appendix.typ")
+  //pagebreak()
+  //heading(numbering: none)[Appendix A: Supplementary Material]
+  //include("/layout/appendix.typ")
 
   pagebreak()
   set cite(style: "alphanumeric")
