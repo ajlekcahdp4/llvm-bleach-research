@@ -164,12 +164,6 @@ llvm-langref:
   url:
     value: https://llvm.org/docs/LangRef.html
     date: 2025-06-18
-llvm-passes:
-  type: web
-  title: LLVM’s Analysis and Transform Passes
-  url:
-    value: https://llvm.org/docs/Passes.html
-    date: 2025-06-18
 llvm-float-bug:
   type: web
   title: "MachineLICM incorrectly hoists fsrmi out of loop"

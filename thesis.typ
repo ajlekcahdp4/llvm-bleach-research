@@ -12,7 +12,6 @@
 )
 
 #include "/content/introduction.typ"
-#pagebreak()
 #include "/content/tasks.typ"
 #pagebreak()
 #include "/content/related_work.typ"
