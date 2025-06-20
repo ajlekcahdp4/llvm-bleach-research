@@ -60,7 +60,7 @@
   pagebreak()
 
   // Main body. Reset page numbering.
-  set par(justify: true, first-line-indent: 2em)
+  set par(justify: true, first-line-indent: (amount: 2em, all: true))
 
   body
 

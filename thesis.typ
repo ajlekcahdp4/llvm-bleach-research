@@ -4,14 +4,11 @@
 #set document(title: title, author: author)
 
 #show: thesis.with(
-  title: title,
-  degree: degree,
-  supervisor: supervisor,
-  author: author,
-  class: class,
+  title: title, degree: degree, supervisor: supervisor, author: author, class: class,
 )
 
 #include "/content/introduction.typ"
+#pagebreak()
 #include "/content/tasks.typ"
 #pagebreak()
 #include "/content/related_work.typ"
