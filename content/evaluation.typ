@@ -166,7 +166,7 @@ block1:
 #figure(caption: [Условие принадлежности к классу инструкций вызова])[
 #set text(size: 1.2em)
 ```CPP
-boo is_call(const MachineInstr &minst) {
+bool is_call(const MachineInstr &minst) {
   return minst.isCall();
 }
 

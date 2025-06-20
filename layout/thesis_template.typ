@@ -44,7 +44,6 @@
   // --- Paragraphs ---
   set par(leading: 1em)
 
-  // --- Figures ---
   show figure: set text(size: 0.85em)
 
   // --- Table of Contents ---
